@@ -22,13 +22,11 @@ var jsoniterAPI = jsoniter.Config{
 	SortMapKeys: true,
 }.Froze()
 
-type nullDefaultType struct{}
-
-func (nullDefaultType) MarshalJSON() ([]byte, error) {
+func (null) MarshalJSON() ([]byte, error) {
 	return []byte("null"), nil
 }
 
-var nullDefault nullDefaultType = struct{}{}
+var nullDefault null = struct{}{}
 
 var (
 	// Note: order matches the order of properties as they are named in the spec.
