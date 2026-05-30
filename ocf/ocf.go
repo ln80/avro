@@ -13,9 +13,9 @@ import (
 	"io"
 	"os"
 
-	"github.com/hamba/avro/v2"
-	"github.com/hamba/avro/v2/internal/bytesx"
 	"github.com/klauspost/compress/zstd"
+	"github.com/ln80/avro/v2"
+	"github.com/ln80/avro/v2/internal/bytesx"
 )
 
 const (

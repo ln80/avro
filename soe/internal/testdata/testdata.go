@@ -1,7 +1,7 @@
 package testdata
 
 import (
-	"github.com/hamba/avro/v2"
+	"github.com/ln80/avro/v2"
 )
 
 // Basic annotated type
